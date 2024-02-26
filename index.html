@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cow Project</title>
+  </head>
+  <body>
+    <nav class="navbar">
+  <a href="#" class="navbarItem" onclick="showClass('homeTab')">Home</a>
+</nav>
+<div class="tabs" style="">
+  <div id="aboutTab" class="tab">
+    <h1 class="hoverSpace title">Cow Project</h1>
+    <p>A attempt to make everything moddable.</p>
+    <h3 class="hoverSpace hsMinor title">Who are we</h3>
+    <p>The Cow Project is a attempt to make everything moddable, and stay open-source in the process.
+
+Quite literally, we will remake projects to meet our goal, make plugin development kits for projects - we'll do just quite about anything.</p>
+  </div>
+  <div id="homeTab">
+    <h1 class="hoverSpace title">
+      Projects
+    </h1>
+    <a href="https://github.com/cowproj"><span>Check us out!</span></a>
+  </div>
+</div>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat';
+}
+
+.activeTab {
+  padding-top: 15vh;
+}
+
+.navbarItem + .navbarItem {
+  margin-left: 5vh;
+}
+
+.navbarItem:hover {
+  color: #4ec269;
+}
+
+.navbarItem {
+  transition: color .25s ease-out 100ms;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding-left: 5vh;
+  align-items: center;
+  text-align: left;
+  background-color: #252938;
+  width: 100%;
+  height: 15vh;
+}
+
+.navbarItem {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #353a54;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  position: relative;
+  top: 2vh;
+}
+
+.hoverSpace {
+  transition: letter-spacing 1s ease-out 100ms;
+}
+
+.hoverSpace:hover {
+  letter-spacing: 2em;
+}
+
+.hsMinor:hover {
+  letter-spacing: 1em;
+}
+
+.title {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.tab {
+  margin-top: 20vh;
+}
+
+a {
+  color: white;
+}
+    </style>
+  </body>
+</html>
